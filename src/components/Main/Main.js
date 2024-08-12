@@ -27,7 +27,6 @@ const Main = () => {
                 <Route path="/products" element={<Shoplist />} />
                 <Route path="/shoplist" element={<Orders />} />
                 <Route path="/about" element={<Aboutus />} />
-
                 <Route path="*" element={<Page404 />} />
             </Routes>
         </div>

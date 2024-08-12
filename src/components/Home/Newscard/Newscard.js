@@ -6,6 +6,7 @@ import {
     Typography,
     Button,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 
 
@@ -14,7 +15,7 @@ const Newscard = (props) => {
         <Card className={props.className}>
             <CardHeader color="blue-gray" className="relative h-56">
                 <img
-                className="h-full w-full"
+                    className="h-full w-full"
                     src={props.img}
                     alt="blog-img"
                 />
@@ -28,7 +29,9 @@ const Newscard = (props) => {
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <Button className="bg-[#eb3e32] text-white hover:bg-[#ff4f33] transition-colors duration-300">خواندن</Button>
+                <Link to="/blog/blogdetail">
+                    <Button className="bg-[#eb3e32] text-white hover:bg-[#ff4f33] transition-colors duration-300">خواندن</Button>
+                </Link>
             </CardFooter>
         </Card>
     )

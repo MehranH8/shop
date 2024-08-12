@@ -546,7 +546,7 @@ export function Bottomnavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="flex items-center gap-x-2 p-1 text-[16px] hover:text-[#eb3e32] transition-colors duration-400"
+                className="flex items-center gap-x-2 min-w-fit p-1 text-[16px] hover:text-[#eb3e32] transition-colors duration-400"
             >
                 <Link to="/about" className="flex items-center gap-2">
 
