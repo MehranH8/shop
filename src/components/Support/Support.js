@@ -2,9 +2,35 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import Topcontainer from "../Ui/Topcontainer/Topcontainer";
+import { useFormik } from 'formik';
+import * as yup from "yup";
 
 
 const Support = () => {
+
+
+    const formik = useFormik({
+        initialValues: {
+            firstname: "",
+            email: "",
+            description: "",
+            phone: "",
+            title: "",
+
+
+        },
+        onSubmit: (values) => {
+            console.log(values)
+
+        },
+        validationSchema: yup.object({
+            firstname: yup.string().required("الزامی"),
+            description: yup.string().required("الزامی"),
+            phone: yup.number().required("الزامی"),
+            title: yup.string().required("الزامی"),
+            email: yup.string().email("ایمیل معتبر نیست").required("الزامی"),
+        })
+    })
 
 
     return (
@@ -49,29 +75,46 @@ const Support = () => {
                     <h2 className="border-b-[3px] text-[20px] pb-2 border-[#eb3e32] max-w-fit font-bold mb-10">
                         ارسال پیام
                     </h2>
-                    <form className="sm:grid  grid-cols-2 gap-8" method='post'>
-                        <div className="flex flex-col">
-                            <label for="firstname" className="text-[14px] font-bold">نام شما</label>
-                            <input id="firstname" name="firstname" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="text" placeholder="نام خود را وارد کنید" />
+                    <form onSubmit={formik.handleSubmit} className="" method='post'>
+                        <div className="sm:grid  grid-cols-2 gap-8">
+                            <div className="flex flex-col">
+                                <label for="firstname" className="text-[14px] font-bold">نام شما</label>
+                                <input onblur={formik.handleBlur} onchange={formik.handleChange} id="firstname" name="firstname" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="text" placeholder="نام خود را وارد کنید" />
+                                {formik.touched.firstname && formik.errors.firstname ? (
+                                    <div className="text-red-700 !text-[12px] text-base w-full max-w-sm lg:max-w-none ">{formik.errors.firstname}</div>
+                                ) : null}
+                            </div>
+                            <div className="flex flex-col mt-3 sm:mt-0">
+                                <label for="email" className="text-[14px] font-bold">ایمیل شما</label>
+                                <input onblur={formik.handleBlur} onchange={formik.handleChange} id="email" name="email" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="email" placeholder="ایمیل خود را وار کنید" />
+                                {formik.touched.email && formik.errors.email ? (
+                                    <div className="text-red-700 !text-[12px] text-base w-full max-w-sm lg:max-w-none ">{formik.errors.email}</div>
+                                ) : null}
+                            </div>
+                            <div className="flex flex-col mt-3 sm:mt-0">
+                                <label for="phone" className="text-[14px] font-bold">تلفن شما</label>
+                                <input onblur={formik.handleBlur} onchange={formik.handleChange} id="phone" name="phone" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="tel" placeholder="شماره تلفن خود را وارد کنید" />
+                                {formik.touched.phone && formik.errors.phone ? (
+                                    <div className="text-red-700 !text-[12px] text-base w-full max-w-sm lg:max-w-none ">{formik.errors.phone}</div>
+                                ) : null}
+                            </div>
+                            <div className="flex flex-col mt-3 sm:mt-0">
+                                <label for="title" className="text-[14px] font-bold">موضوع</label>
+                                <input onblur={formik.handleBlur} onchange={formik.handleChange} id="title" name="title" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="text" placeholder="موضوع را وارد کنید" />
+                                {formik.touched.title && formik.errors.title ? (
+                                    <div className="text-red-700 !text-[12px] text-base w-full max-w-sm lg:max-w-none ">{formik.errors.title}</div>
+                                ) : null}
+                            </div>
+                            <div className="flex flex-col col-span-2 mt-3 sm:mt-0">
+                                <label for="description" className="text-[14px] font-bold">پیام شما</label>
+                                <textarea onblur={formik.handleBlur} onchange={formik.handleChange} id="description" name="description" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d] resize-none pb-14" type="" placeholder="پیام خود را وارد کنید" />
+                                {formik.touched.description && formik.errors.description ? (
+                                    <div className="text-red-700 !text-[12px] text-base w-full max-w-sm lg:max-w-none ">{formik.errors.description}</div>
+                                ) : null}
+                            </div>
                         </div>
-                        <div className="flex flex-col mt-3 sm:mt-0">
-                            <label for="email" className="text-[14px] font-bold">ایمیل شما</label>
-                            <input id="email" name="email" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="email" placeholder="ایمیل خود را وار کنید" />
-                        </div>
-                        <div className="flex flex-col mt-3 sm:mt-0">
-                            <label for="phone" className="text-[14px] font-bold">تلفن شما</label>
-                            <input id="phone" name="phone" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="tel" placeholder="شماره تلفن خود را وارد کنید" />
-                        </div>
-                        <div className="flex flex-col mt-3 sm:mt-0">
-                            <label for="title" className="text-[14px] font-bold">موضوع</label>
-                            <input id="title" name="title" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d]" type="text" placeholder="موضوع را وارد کنید" />
-                        </div>
-                        <div className="flex flex-col col-span-2 mt-3 sm:mt-0">
-                            <label for="description" className="text-[14px] font-bold">پیام شما</label>
-                            <textarea id="description" name="description" className="border-[1px] border-[#cdcdcd] pr-3 py-2 w-full mt-2 placeholder-[#6c757d] resize-none pb-14" type="" placeholder="پیام خود را وارد کنید" />
-                        </div>
+                        <button className="hover:bg-[#ff4f33] transition-colors duration-300 bg-[#eb3e32] text-white rounded-3xl py-2 px-10  mt-6" type="submit">ارسال</button>
                     </form>
-                    <button className="hover:bg-[#ff4f33] transition-colors duration-300 bg-[#eb3e32] text-white rounded-3xl py-2 px-10  mt-6" type="submit">ارسال</button>
 
                 </div>
             </div>

@@ -81,20 +81,20 @@ export function Topnavbar() {
 
 
     return (
-        <Navbar className="mx-auto shadow-none max-w-screen-xl px-4 py-2 relative z-20 lg:px-2 lg:py-4">
+        <Navbar className="mx-auto shadow-none max-w-screen-xl px-4 py-2 relative z-20  lg:px-2 lg:py-4">
             <div className="container mx-auto grid grid-cols-2 md:grid-cols-3  md:flex md:items-center md:justify-between text-blue-gray-900">
                 <div className="md:hidden flex ">
                     <div className="my-auto flex gap-2 ">
                         <button className="hover:bg-[#ff4f33] transition-colors duration-300 px-[8px] justify-center mr-2  py-[9px] bg-[#eb3e32] text-white text-[18px] flex" onClick={openDrawerRight}>
                             <span className="text-[25px] ml-1 mt-[1px]"><MdMenuOpen /></span>
                         </button>
-                        <Drawer
+                        <Drawer 
                             placement="right"
                             open={openRight}
                             onClose={closeDrawerRight}
-                            className="p-4 "
+                            className="p-4"
                         >
-                            <div className="mb-6 flex justify-end">
+                            <div className="mb-6 flex justify-end ">
                                 <IconButton
                                     variant="text"
                                     onClick={closeDrawerRight}
@@ -117,7 +117,7 @@ export function Topnavbar() {
                                 </IconButton>
                             </div>
 
-                            <Card className="h-[100vh] w-[112%] mt-[-22px] mr-[-16px] rounded-none max-w-[20rem] p-4 pt-0 shadow-none">
+                            <Card className=" h-[100vh] w-[112%] mt-[-22px] mr-[-16px] rounded-none max-w-[20rem] p-4 pt-0 shadow-none">
                                 <List className="mt-[22px]">
                                     {/* */}
                                     <Accordion
@@ -527,7 +527,7 @@ export function Bottomnavbar() {
             >
                 <Link to="/" className="flex items-center gap-2">
 
-                    <FaHome className="text-[20px]" />
+                    <FaHome className="text-[20px] hidden sm:block" />
                     خانه
                 </Link>
             </Typography>
@@ -538,7 +538,7 @@ export function Bottomnavbar() {
                 className="flex items-center gap-x-2 p-1 text-[16px] hover:text-[#eb3e32] transition-colors duration-400"
             >
                 <Link to="/blog" className="flex items-center gap-2">
-                    <FaRegNewspaper className="text-[20px]" />
+                    <FaRegNewspaper className="text-[20px] hidden sm:block" />
                     بلاگ
                 </Link>
             </Typography>
@@ -550,7 +550,7 @@ export function Bottomnavbar() {
             >
                 <Link to="/about" className="flex items-center gap-2">
 
-                    <BsPeopleFill className="text-[20px]" />
+                    <BsPeopleFill className="text-[20px] hidden sm:block" />
                     درباره ما
                 </Link>
             </Typography>
@@ -562,7 +562,7 @@ export function Bottomnavbar() {
             >
                 <Link to="/support" className="flex items-center gap-2 ">
 
-                    <BiSupport className="text-[20px]" />
+                    <BiSupport className="text-[20px] hidden sm:block" />
                     پشتیبانی
                 </Link>
             </Typography>

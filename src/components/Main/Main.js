@@ -3,7 +3,7 @@ import Support from "../Support/Support"
 import Blog from "../Blog/Blog"
 import Blogdetails from "../Blog/Blogdetails/Blogdetails"
 import Home from "../Home/Home"
-import { Navigate, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import Page404 from "../Page404/Page404"
 import Account from "../Account/Account"
 import Shoplist from "../Shop/Shoplist/Shoplist"
