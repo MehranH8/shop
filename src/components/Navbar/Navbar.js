@@ -88,7 +88,7 @@ export function Topnavbar() {
                         <button className="hover:bg-[#ff4f33] transition-colors duration-300 px-[8px] justify-center mr-2  py-[9px] bg-[#eb3e32] text-white text-[18px] flex" onClick={openDrawerRight}>
                             <span className="text-[25px] ml-1 mt-[1px]"><MdMenuOpen /></span>
                         </button>
-                        <Drawer 
+                        <Drawer
                             placement="right"
                             open={openRight}
                             onClose={closeDrawerRight}
@@ -133,30 +133,30 @@ export function Topnavbar() {
                                         <ListItem className="p-0" selected={open === 1}>
                                             <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3">
                                                 <Typography color="blue-gray" className="ml-auto text-[16px]  font-normal">
-                                                    لوازم دیجیتال
+                                                    لوازم آرایشی
                                                 </Typography>
                                             </AccordionHeader>
                                         </ListItem>
                                         <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                             <List className="p-0 ">
-                                                <Link to="/products">
+                                                <Link to="/products/makeup">
                                                     <div className="hover:bg-white text-[14px] w-full min-w-max my-2 mt-4  hover:text-[#eb3e32] transition-colors duration-300">
-                                                        موبایل
+                                                        ریمل
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/makeup">
                                                     <div className="hover:bg-white text-[14px] min-w-w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        لپ تاپ
+                                                        خط چشم
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/makeup">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        هدست و هندزفری
+                                                        رژ لب
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/makeup">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        ساعت و مچ بند هوشمند
+                                                        لاک ناخن
                                                     </div>
                                                 </Link>
                                             </List>
@@ -177,35 +177,35 @@ export function Topnavbar() {
                                         <ListItem className="p-0" selected={open === 2}>
                                             <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
                                                 <Typography color="blue-gray" className="ml-auto text-[16px]  font-normal">
-                                                    لوازم خانگی
+                                                    لوازم بهداشتی
                                                 </Typography>
                                             </AccordionHeader>
                                         </ListItem>
                                         <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                             <List className="p-0 ">
-                                                <Link to="/products">
+                                                <Link to="/products/health">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        تلویزیون
+                                                        کرم ضد آفتاب
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/health">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        یخچال و فریزر
+                                                    ماسک صورت
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/health">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        ماشین لباس شویی
+ژل مو
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/health">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        قهوه ساز
+                                                       تقویت کننده مو 
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/health">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        ماشین ظرف شویی
+                                                      سرم پوست
                                                     </div>
                                                 </Link>
                                             </List>
@@ -232,39 +232,39 @@ export function Topnavbar() {
                                         </ListItem>
                                         <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                             <List className="p-0 ">
-                                                <Link to="/products">
+                                                <Link to="/products/fashion">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                         پیراهن
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/fashion">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                         تیشرت
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/fashion">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                         کت و شلوار
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/fashion">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                         کفش
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/fashion">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        مردانه
+                                                        مانتو
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/fashion">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        زنانه
+                                                        پالتو
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/fashion">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        بچگانه
+                                                        جوراب
                                                     </div>
                                                 </Link>
                                             </List>
@@ -285,30 +285,30 @@ export function Topnavbar() {
                                         <ListItem className="p-0" selected={open === 4}>
                                             <AccordionHeader onClick={() => handleOpen(4)} className="border-b-0 p-3">
                                                 <Typography color="blue-gray" className="ml-auto text-[16px]  font-normal">
-                                                    آرایشی و بهداشتی
+                                                    اکسسوری
                                                 </Typography>
                                             </AccordionHeader>
                                         </ListItem>
                                         <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                             <List className="p-0 ">
-                                                <Link to="/products">
+                                                <Link to="/products/accessory">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        کرم و مرطوب کننده
+                                                       ساعت و دستبند
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/accessory">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        آرایشی صورت
+                                                       عینک آفتابی
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/accessory">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        آرایشی لب
+                                                       کیف
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/accessory">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        آرایشی لب
+                                                      کمربند
                                                     </div>
                                                 </Link>
                                             </List>
@@ -329,35 +329,35 @@ export function Topnavbar() {
                                         <ListItem className="p-0" selected={open === 5}>
                                             <AccordionHeader onClick={() => handleOpen(5)} className="border-b-0 p-3">
                                                 <Typography color="blue-gray" className="ml-auto text-[16px]  font-normal">
-                                                    ابزار آلات و تجهیزات
+                                                    بچگانه
                                                 </Typography>
                                             </AccordionHeader>
                                         </ListItem>
                                         <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                             <List className="p-0 ">
-                                                <Link to="/products">
+                                                <Link to="/products/child">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        آچار و پیچ گوشتی
+                                                       لباس گرم
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/child">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        دریل
+                                                       کاپشن
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/child">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        پیچ و مهره
+                                                       جوراب
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/child">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        اره
+                                                        کفش
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/child">
                                                     <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                        شیرآلات
+                                                      هودی
                                                     </div>
                                                 </Link>
                                             </List>
@@ -378,25 +378,25 @@ export function Topnavbar() {
                                         <ListItem className="p-0" selected={open === 6}>
                                             <AccordionHeader onClick={() => handleOpen(6)} className="border-b-0 p-3">
                                                 <Typography color="blue-gray" className="ml-auto text-[16px]  font-normal">
-                                                    لوازم تحریر
+                                                    ورزشی
                                                 </Typography>
                                             </AccordionHeader>
                                         </ListItem>
                                         <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                             <List className="p-0 ">
-                                                <Link to="/products">
+                                                <Link to="/products/sport">
                                                     <div className="hover:bg-white text-[14px] my-2 mt-4 w-full min-w-max hover:text-[#eb3e32] transition-colors duration-300">
-                                                        کتاب و دفتر
+                                                       کوله ورزشی
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/sport">
                                                     <div className="hover:bg-white text-[14px] my-2 w-full min-w-max hover:text-[#eb3e32] transition-colors duration-300">
-                                                        مداد و خودکار
+                                                       لباس ورزشی
                                                     </div>
                                                 </Link>
-                                                <Link to="/products">
+                                                <Link to="/products/sport">
                                                     <div className="hover:bg-white text-[14px] my-2 w-full min-w-max hover:text-[#eb3e32] transition-colors duration-300">
-                                                        لوازم طراحی
+                                                       کفش ورزشی
                                                     </div>
                                                 </Link>
                                             </List>
@@ -623,30 +623,32 @@ export function Bottomnavbar() {
                                             <ListItem className="p-0" selected={open === 1}>
                                                 <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3">
                                                     <Typography color="blue-gray" className="ml-auto  font-normal">
-                                                        لوازم دیجیتال
+                                                        لوازم آرایشی
                                                     </Typography>
                                                 </AccordionHeader>
                                             </ListItem>
                                             <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                                 <List className="p-0 ">
-                                                    <Link to="/products">
+                                                    <Link to="/products/makeup">
                                                         <div className="hover:bg-white text-[14px] w-full min-w-max my-2 mt-4  hover:text-[#eb3e32] transition-colors duration-300">
-                                                            موبایل
+                                                        ریمل
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/makeup">
                                                         <div className="hover:bg-white text-[14px] min-w-w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            لپ تاپ
+                                                        خط چشم
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/makeup">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            هدست و هندزفری
+                                                        رژ لب
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/makeup">
                                                         <div className="hover:bg-white text-[14px] min-w-max mb-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            ساعت و مچ بند هوشمند
+                                                        لاک ناخن
                                                         </div>
                                                     </Link>
                                                 </List>
@@ -667,35 +669,40 @@ export function Bottomnavbar() {
                                             <ListItem className="p-0" selected={open === 2}>
                                                 <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
                                                     <Typography color="blue-gray" className="ml-auto  font-normal">
-                                                        لوازم خانگی
+                                                        لوازم بهداشتی
                                                     </Typography>
                                                 </AccordionHeader>
                                             </ListItem>
                                             <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                                 <List className="p-0 ">
-                                                    <Link to="/products">
+                                                    <Link to="/products/health">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            تلویزیون
+                                                        کرم ضد آفتاب
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/health">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            یخچال و فریزر
+                                                        ماسک صورت
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/health">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            ماشین لباس شویی
+                                                        ژل مو
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/health">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            قهوه ساز
+                                                        تقویت کننده مو 
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/health">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            ماشین ظرف شویی
+                                                        سرم پوست
+
                                                         </div>
                                                     </Link>
                                                 </List>
@@ -722,39 +729,39 @@ export function Bottomnavbar() {
                                             </ListItem>
                                             <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                                 <List className="p-0 ">
-                                                    <Link to="/products">
+                                                    <Link to="/products/fashion">
                                                         <div className="hover:bg-white min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                             پیراهن
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/fashion">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                             تیشرت
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/fashion">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                             کت و شلوار
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/fashion">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
                                                             کفش
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/fashion">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            مردانه
+                                                            مانتو
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/fashion">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            زنانه
+                                                            پالتو
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/fashion">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            بچگانه
+                                                            جوراب
                                                         </div>
                                                     </Link>
                                                 </List>
@@ -775,30 +782,32 @@ export function Bottomnavbar() {
                                             <ListItem className="p-0" selected={open === 4}>
                                                 <AccordionHeader onClick={() => handleOpen(4)} className="border-b-0 p-3">
                                                     <Typography color="blue-gray" className="ml-auto  font-normal">
-                                                        آرایشی و بهداشتی
+                                                       اکسسوری
                                                     </Typography>
                                                 </AccordionHeader>
                                             </ListItem>
                                             <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                                 <List className="p-0 ">
-                                                    <Link to="/products">
+                                                    <Link to="/products/accessory">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            کرم و مرطوب کننده
+                                                        ساعت و دستبند
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/accessory">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            آرایشی صورت
+                                                        عینک آفتابی
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/accessory">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            آرایشی لب
+                                                        کیف
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/accessory">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            آرایشی لب
+                                                        کمربند
                                                         </div>
                                                     </Link>
                                                 </List>
@@ -819,35 +828,36 @@ export function Bottomnavbar() {
                                             <ListItem className="p-0" selected={open === 5}>
                                                 <AccordionHeader onClick={() => handleOpen(5)} className="border-b-0 p-3">
                                                     <Typography color="blue-gray" className="ml-auto  font-normal">
-                                                        ابزار آلات و تجهیزات
+                                                    بچگانه
                                                     </Typography>
                                                 </AccordionHeader>
                                             </ListItem>
                                             <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                                 <List className="p-0 ">
-                                                    <Link to="/products">
+                                                    <Link to="/products/child">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            آچار و پیچ گوشتی
+                                                        لباس گرم
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/child">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 mt-4 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            دریل
+                                                        کاپشن
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/child">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            پیچ و مهره
+                                                        جوراب
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/child">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            اره
+                                                            کفش
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/child">
                                                         <div className="hover:bg-white text-[14px] min-w-max my-2 w-full hover:text-[#eb3e32] transition-colors duration-300">
-                                                            شیرآلات
+                                                            هودی
                                                         </div>
                                                     </Link>
                                                 </List>
@@ -868,28 +878,32 @@ export function Bottomnavbar() {
                                             <ListItem className="p-0" selected={open === 6}>
                                                 <AccordionHeader onClick={() => handleOpen(6)} className="border-b-0 p-3">
                                                     <Typography color="blue-gray" className="ml-auto  font-normal">
-                                                        لوازم تحریر
+                                                      ورزشی
                                                     </Typography>
                                                 </AccordionHeader>
                                             </ListItem>
                                             <AccordionBody className="py-1 mr-6 max-w-[300px]">
                                                 <List className="p-0 ">
-                                                    <Link to="/products">
+                                                    <Link to="/products/sport">
                                                         <div className="hover:bg-white text-[14px] my-2 mt-4 w-full min-w-max hover:text-[#eb3e32] transition-colors duration-300">
-                                                            کتاب و دفتر
+                                                        کوله ورزشی
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/sport">
                                                         <div className="hover:bg-white text-[14px] my-2 w-full min-w-max hover:text-[#eb3e32] transition-colors duration-300">
-                                                            مداد و خودکار
+                                                        لباس ورزشی
+
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products">
+                                                    <Link to="/products/sport">
                                                         <div className="hover:bg-white text-[14px] my-2 w-full min-w-max hover:text-[#eb3e32] transition-colors duration-300">
-                                                            لوازم طراحی
+                                                        کفش ورزشی
+
                                                         </div>
                                                     </Link>
                                                 </List>
+                                                
                                             </AccordionBody>
                                         </Accordion>
                                         {/* */}
